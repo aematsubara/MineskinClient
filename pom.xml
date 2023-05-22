@@ -34,22 +34,15 @@
                                 <includes>
                                     <include>org.mineskin:java-client**</include>
                                     <include>org.jsoup:jsoup**</include>
-                                    <include>com.google.code.gson:gson**</include>
-                                    <include>com.google.guava:guava**</include>
                                 </includes>
                             </artifactSet>
-                            <relocations>
-                                <relocation>
-                                    <pattern>com.google.</pattern>
-                                    <shadedPattern>org.mineskin.com.google.</shadedPattern>
-                                </relocation>
-                            </relocations>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
         <dependency>
             <groupId>org.jsoup</groupId>
@@ -60,17 +53,19 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.9.0</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>31.1-jre</version>
+            <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
