@@ -85,6 +85,22 @@ public class MineskinClient {
     public Executor getRequestExecutor() {
         return requestExecutor;
     }
+    
+    public String getUserAgent() {
+        return userAgent;
+    }
+
+    public void setUserAgent(String userAgent) {
+        this.userAgent = userAgent;
+    }
+
+    public String getApiKey() {
+        return apiKey;
+    }
+
+    public void setApiKey(String apiKey) {
+        this.apiKey = apiKey;
+    }
 
     /////
 
