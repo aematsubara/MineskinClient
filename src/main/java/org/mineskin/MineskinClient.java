@@ -32,8 +32,8 @@ public class MineskinClient {
     private static final String USER_FORMAT = "https://api.mineskin.org/generate/user/%s?%s";
 
     private final Executor requestExecutor;
-    private final String userAgent;
-    private final String apiKey;
+    private String userAgent;
+    private String apiKey;
 
     private final JsonParser jsonParser = new JsonParser();
     private final Gson gson = new Gson();
