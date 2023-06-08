@@ -81,6 +81,10 @@ public class MineskinClient {
     public long getNextRequest() {
         return nextRequest;
     }
+    
+    public Executor getRequestExecutor() {
+        return requestExecutor;
+    }
 
     /////
 
